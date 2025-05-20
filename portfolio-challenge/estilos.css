@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    height: 100%;
+    align-content: center;
+    scroll-snap-type:y mandatory;
+}
+
+html{
+    font-family:sans-serif;
+    line-height:1.5;
+    height: 100px;
+}
+
+header {
+    background-color: #fff; /* Color de fondo del header */
+    padding: 1rem;          /* Espaciado interno */
+    position: sticky;        /* Habilita el sticky header */
+    top: 0;                 /* Fija el header a la parte superior */
+    z-index: 100;           /* Asegura que el header esté sobre otros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para mayor visibilidad */
+}
+
+.logo img {
+    width: 100px;          /* Ancho del logo */
+    height: auto;           /* Altura proporcional */
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;      /* Elimina los puntos de la lista */
+    padding: 0;            /* Resetea el padding */
+    margin: 0;             /* Resetea el margen */
+    display: flex;         /* Permite organizar los elementos en una fila */
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+  margin-left: 1rem;     /* Espaciado entre los elementos del menú */
+}
+
+nav a {
+  text-decoration: none;  /* Elimina el subrayado de los enlaces */
+  color: #333;           /* Color del texto del enlace */
+}
+
+hero {
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+}
+
+.boton {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Sombra para mayor visibilidad */
+    border: 2px solid #8d5cff; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #002a6d; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+}
