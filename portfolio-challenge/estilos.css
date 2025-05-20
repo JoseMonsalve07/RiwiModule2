@@ -13,7 +13,7 @@ html{
     height: 100px;
 }
 
-header {
+#header {
     background-color: #fff; /* Color de fondo del header */
     padding: 1rem;          /* Espaciado interno */
     position: sticky;        /* Habilita el sticky header */
@@ -49,7 +49,7 @@ nav a {
   color: #333;           /* Color del texto del enlace */
 }
 
-hero {
+#hero {
     margin: 0;
     position: absolute;
     top: 47%;
@@ -69,4 +69,46 @@ hero {
     text-transform: uppercase; /*capitalización texto*/
     font-family: 'Helvetica', sans-serif; /*tipografía texto*/
     border-radius: 50px; /*bordes redondos*/
+}
+
+#proyectos {
+    padding: 40px 20px;
+    background-color: #2e1adf;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.card a{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Sombra para mayor visibilidad */
+    border: 2px solid #8d5cff; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #002a6d; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    
+}
+
+.card img{
+    height: 200px;
+    width: 200px;
+}
+
+.card {
+    margin: auto;
+  flex: 1 1 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
 }
