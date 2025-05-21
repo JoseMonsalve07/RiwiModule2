@@ -1,0 +1,41 @@
+section img{
+    border: 2px solid black;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2); /* Sombra para mayor visibilidad */
+}
+
+
+body {
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    height: 100%;
+    align-content: center;
+    scroll-snap-type:y mandatory;
+
+}
+
+.message{
+	position: absolute;
+    left: 130px;
+    align-content: center;
+}
+
+.messageTitle{
+    position: absolute;
+    left: 35px;
+    top: 1375px;
+}
+
+.send{
+    position: absolute;
+    left: 365px;
+    top: 1375px;
+}
+
+footer{
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 5%;
+    left: 10px;
+}
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="portfolio.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Personal Portfolio</title>
@@ -8,22 +9,61 @@
     </head>
     <body>
         <h1>Jose Monsalve - Riwi Developer</h1>
+        <nav>
+            <a href="#about-me" id="AboutMe">About Me</a>
+            <a href="#Projects" id="Projects">Projects</a>
+            <a href="#Contact" id="Contact">Contact</a>
+        </nav>
         <section>
             <h2>About Me</h2>
             <p>Hello, I am Jose Manuel Bustamante Monsalve.</p>
             <p>I'm 18 years old, from Medellín, and currently live in Girardota. My favorite food is hamburgers, but I also love homemade food.</p>
-            <p></p>
+            <p>I am passionate about software development.</p>
             <img src="FotoPerfil.jpeg" alt="Jose Monsalve's photo" width="200">
         </section>
+        <h2>My technical skills:</h2>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Python</li>
+            <li>Creativity</li>
+            <li>Focus</li>
         </ul>
         <section>
             <h2>Projects</h2>
             <h3>Project 1: Portfolio Website</h3>
-            <p>This is my first project where I built a personal portfolio using only HTML</p>
-        </section>
+            <p>This is my first project where I built a personal portfolio using only HTML.</p><br>
+            <img src="portfolioPhoto.png" alt="Portfolio photo" width="600px" height="400px"><br><br>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Technologies used</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>HTML, CSS</td>
+                    <td><a href="portafolio_Jose_Monsalve.html" target="_blank">View Project</a></td>
+                </tr>
+            </table>
+        </section><br>
+        <form action="/send" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required><br>
+
+            <div class="messageTitle"><label for="message">Message:</label></div><br>
+            <div class="message"><textarea name="message" id="message" rows="4" required></textarea></div>
+
+            <div class="send"><input type="submit" value="Send"></div>
+        </form>
+        <footer>
+            <h2>Social networks</h2>
+             <ul>
+                <li><a href="https://www.instagram.com/" target="_blank ">Instagram</a></li>
+                <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank ">Facebook</a></li>
+                <li><a href="https://www.youtube.com/?app=desktop&hl=es" target="_blank ">Youtube</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
