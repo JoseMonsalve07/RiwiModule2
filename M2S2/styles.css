@@ -1,22 +1,23 @@
-body{
+body {
+    /* Resetea márgenes y paddings, establece el color del fondo y centra el texto */
     margin: 0px;
     padding: 0px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     height: 100%;
-    align-content: center;
-    scroll-snap-type:y mandatory;
     background-color: #f0f0f0;
-    display: block;
     text-align: center;
-    justify-content: center;
+    display: block;
 }
-header{
+
+header {
+    /* Fija el encabezado en la parte superior con sombra. */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0px;
 }
 
-.boxes{
+.boxes {
+    /* Contenedor principal, fondo negro para contraste. */
     display: inline-flex;
     margin: 0px;
     padding: 0px;
@@ -24,7 +25,8 @@ header{
     margin-top: 7%;
 }
 
-#special{
+#special {
+    /* Caja especial: borde negro, fondo blanco y texto verde. */
     color: green;
     background-color: #ffffff;
     border: 2px solid #000;
@@ -32,7 +34,8 @@ header{
     width: 200px;
 }
 
-.box{
+.box {
+    /* Caja con sombra, borde definido, y pseudo-elementos (siguiente selector). */
     background-color: #ffffff;
     border: 2px solid #000;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -42,7 +45,15 @@ header{
     top: 200px;
 }
 
-footer{
+.box::before, .box::after {
+    /* Agrega el texto "¡New!" antes y después del texto dentro de la caja. */
+    content: "¡New!";
+    color: red;
+    font-weight: bold;
+}
+
+footer {
+    /* Pie de página fijo al fondo y con sombra. */
     position: fixed;
     bottom: 0%;
     width: 100%;
@@ -50,96 +61,67 @@ footer{
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.rotate-box{
+.rotate-box {
+    /* Caja rotada 90 grados con sombra y fondo amarillo. */
     margin: 0px;
     padding: 0px;
     width: 100px;
     height: 100px;
     background-color: yellow;
     margin-top: 8%;
-    margin-left: 35%;
+    margin-left: 30%;
     transform: rotate(90deg);
+    box-shadow: 15px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-.textbox{
+.textbox {
+    /* Caja con borde. Usada para mostrar elementos interactivos. */
     border: 2px solid #000;
     display: inline-block;
     margin: 10px;
     padding: 20px;
 }
 
-.textbox:hover{
-    animation: 2s ease-in-out;
-    animation-name: rotate;
-
-}
-
-.box::before{
-    content: "¡New! ";
-    color: red;
-    font-weight: bold;
-}
-
-.box::after{
-    content: " ¡New!";
-    color: red;
-    font-weight: bold;
-}
-
 @keyframes rotate {
-    0%{
-        transform: rotate(0deg);
+    /* Crea una animación de rotación de 360° y un cambio de color del fondo. */
+    0%   { 
+        transform: rotate(0deg); 
     }
-    25%{
-        transform: rotate(90deg);
+    25%  { 
+        transform: rotate(90deg); 
     }
-    50%{
-        transform: rotate(180deg);
+    50%  { 
+        transform: rotate(180deg); 
     }
-    75%{
-        transform: rotate(270deg);
+    75%  { 
+        transform: rotate(270deg); 
     }
-    100%{
+    100% {
         transform: rotate(360deg);
         background-color: #ffffff;
     }
 }
 
 @keyframes fade {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 10;
-    }
+    /* Crea una animación de desvanecimiento de invisible a visible. */
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-a:hover{
+.textbox:hover {
+    /* Aplica la animación de rotación al pasar el mouse. */
+    animation: rotate 2s ease-in-out;
+}
+
+a:hover {
+    /* Cambia el color del texto y aplica la animación "fade" al pasar el mouse. */
     color: orange;
     text-decoration: underline;
-    animation: 2s ease-in-out;
-    animation-name: fade;
-
+    animation: fade 2s ease-in-out;
 }
 
-.content{
-    width: 300px;
-    padding: 20px;
-    margin: 10px;
-    border: 5px solid #ffffff;
-    background-color: #f0f0f0;
-
-}
-
-.visual-effects{
-    width: 350px;
-    padding: 20px;
-    margin: 10px;
-    border: 5px solid #ffffff;
-    background-color: #f0f0f0;
-}
-
-.interactivity{
+.content {
+    /* Contenedor de cada sección con bordes, fondo y espaciado. */
     width: 300px;
     padding: 20px;
     margin: 10px;
