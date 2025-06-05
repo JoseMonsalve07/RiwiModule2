@@ -1,14 +1,19 @@
+/* Reseteo general de estilos */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Estilos generales del body */
 body{
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Encabezado */
 header{
     background-color: #333;
     color: white;
@@ -16,47 +21,51 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 40px 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);   
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Contenido principal */
 main{
     display: block;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
-.title{
-
+/* Título y descripción */
+.subtitle{
     padding-top: 5em;
 }
 
+/* Margenes para el párrafo */
 p{
     margin: 3em;
 }
 
+/* Lista de navegación */
 nav ul{
     display: flex;
     list-style: none;
     text-decoration: none;
 }
 
+/* Elementos de la lista de navegación */
 nav ul li{
     margin: 0 15px;
 }
 
+/* Enlaces de navegación */
 nav ul li a{
     color: white;
     text-decoration: none;
 }
 
+/* Efecto hover en los enlaces de navegación */
 nav ul li a:hover{
     color: black;
 }
 
-main{
-    padding: 20px;
-}
-
+/* Contenedor de servicios */
 .container{
     display: grid;
     justify-content: space-between;
@@ -65,6 +74,7 @@ main{
     margin: 4rem;
 }
 
+/* Cada item del contenedor */
 .item{
     background-color: #f4f4f4;
     padding: 20px;
@@ -74,10 +84,12 @@ main{
     cursor: pointer;
 }
 
+/* Efecto hover en servicios */
 .item:hover{
     background-color: #ccc;
 }
 
+/* Pie de página */
 footer{ 
     position: fixed;
     bottom: 0px;
@@ -87,6 +99,7 @@ footer{
     color: white;
 }
 
+/* Media query para tablets 768px */
 @media (max-width: 768px){
     .container{
         grid-template-columns: repeat(2, 1fr);
@@ -97,6 +110,7 @@ footer{
     }
 }
 
+/* Media querie para celulares 480px */
 @media (max-width: 480px){
     .container{
         grid-template-columns: 1fr;
@@ -111,4 +125,4 @@ footer{
         flex-direction: column;
         align-items: flex-start;
     }
-}   
+}
