@@ -36,6 +36,10 @@ nav ul li a{
     text-decoration: none;
 }
 
+nav ul li a:hover{
+    color: black;
+}
+
 main{
     padding: 20px;
 }
@@ -52,7 +56,12 @@ main{
     padding: 20px;
     border: 1px solid #ccc;
     text-align: center;
-    flex: 1;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.item:hover{
+    background-color: #ccc;
 }
 
 footer{ 
