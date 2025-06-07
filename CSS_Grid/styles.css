@@ -78,7 +78,7 @@ body{
     grid-column: 1/4;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     body{
         background-color: brown;
     }
@@ -113,7 +113,7 @@ body{
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:650px){
     body{
         background-color: whitesmoke;
     }
